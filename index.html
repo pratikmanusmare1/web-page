@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Title</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Main Content</h2>
+            <p>This is some example text in the main content area.</p>
+            <p>Current Time: {{ current_time }}</p>
+            <p>Random Quote: "{{ random_quote }}"</p>
+        </section>
+
+        
+<section>
+    <h2>Enter your details</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>Contact Information:</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: 123-456-7890</p>
+    </footer>
+</body>
+</html>
